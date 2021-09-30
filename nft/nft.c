@@ -21018,6 +21018,8 @@ static const u8 data_segment_data_7[] = {
 };
 
 static void init_memory(void) {
+  wasm_rt_allocate_memory(Z_envZ_memory, 1, 0xffffffu);
+
   LOAD_DATA((*Z_envZ_memory), 65536u, data_segment_data_0, 2238);
   LOAD_DATA((*Z_envZ_memory), 67784u, data_segment_data_1, 621);
   LOAD_DATA((*Z_envZ_memory), 68416u, data_segment_data_2, 33);
