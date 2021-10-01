@@ -23,6 +23,11 @@
 extern "C" {
 #endif
 
+#include "seal-funcs.h"
+#ifdef GENERATED
+#include "seal-funcs-impl.h"
+#endif
+
 /** Maximum stack depth before trapping. This can be configured by defining
  * this symbol before including wasm-rt when building the generated c files,
  * for example:

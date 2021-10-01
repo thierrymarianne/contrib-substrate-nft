@@ -13,3 +13,9 @@ Cargo.lock
 
 substrate-nft
 .vscode*
+
+# Object files from compiling
+*.o
+
+# Crap made on OSX when compiling
+*.dSYM
